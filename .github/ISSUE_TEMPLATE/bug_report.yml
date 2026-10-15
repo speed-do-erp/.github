@@ -1,0 +1,37 @@
+name: Bug report
+description: SPEED-DO does something wrong that no setting or data change explains
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Do not include personal data (names, IDs, IBANs, emails). Problems reported from inside SPEED-DO arrive here already masked, labelled `from-system`.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened
+      description: The steps, and what you saw (error message, wrong number).
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What was expected
+    validations:
+      required: true
+  - type: input
+    id: where
+    attributes:
+      label: Where
+      description: The page or document type, e.g. Sales Invoice, Course Registration.
+  - type: textarea
+    id: versions
+    attributes:
+      label: Versions
+      description: From Help > About, or the issue's context in SPEED-DO.
+      render: text
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options: [Saudi (VAT, ZATCA), HR (GOSI, Mudad, end of service), University, Maintenance Center, Website, Deployment and backups, Other]

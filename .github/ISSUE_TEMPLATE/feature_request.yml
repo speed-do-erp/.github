@@ -1,0 +1,20 @@
+name: Feature request
+description: A new capability or an improvement
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What users cannot do today, or what costs them time or money. Describe the problem before any solution.
+    validations:
+      required: true
+  - type: textarea
+    id: who
+    attributes:
+      label: Who has it
+      description: Which users or roles, and how often.
+  - type: textarea
+    id: idea
+    attributes:
+      label: Idea for a solution (optional)
